@@ -3,10 +3,14 @@ ruby '2.2.2'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails'
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
@@ -26,7 +30,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
