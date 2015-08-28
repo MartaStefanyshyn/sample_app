@@ -4,6 +4,7 @@ ruby '2.2.2'
 
 gem 'rails'
 gem 'pg'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'rspec-rails'
